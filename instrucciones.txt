@@ -1,0 +1,40 @@
+# Configurar Git (solo si es la primera vez)
+git config --global user.name "Tu Nombre"
+git config --global user.email "tuemail@example.com"
+
+# Navegar al directorio del proyecto (si ya existe localmente)
+cd /ruta/del/proyecto
+
+# Si no tienes el repositorio local, clónalo
+git clone https://github.com/tu-usuario/tu-repositorio.git
+cd tu-repositorio
+
+# Agregar archivos al área de preparación (todos los cambios)
+git add .
+
+# O agregar archivos específicos
+git add archivo1 archivo2
+
+# Realizar un commit con un mensaje
+git commit -m "Descripción breve de los cambios"
+
+# Vincular el repositorio remoto (si no está configurado)
+git remote add origin https://github.com/tu-usuario/tu-repositorio.git
+
+# Verificar el repositorio remoto configurado
+git remote -v
+
+# Subir los cambios a GitHub (ejemplo en la rama main)
+git push origin main
+
+# Si la rama es diferente, primero revisa su nombre
+git branch
+
+# Luego sube la rama correspondiente
+git push origin nombre-de-tu-rama
+
+# (Opcional) Configurar el push predeterminado para no escribir la rama cada vez
+git branch --set-upstream-to=origin/main main
+
+# Ahora solo necesitarás escribir este comando en el futuro
+git push
