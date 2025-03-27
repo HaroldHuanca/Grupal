@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none; /* Quita el subrayado del enlace */
+  color: inherit; /* Opcional: Mantiene el color del texto sin cambiarlo */
+}
 /* Fondo GIF animado */
 .background {
     position: fixed;
