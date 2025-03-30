@@ -1,3 +1,8 @@
+How to play/Como jugar
+Haga click en el contenedor y entre al directorio ./DOOM que seria (cd DOOM en la consola ya que estamos en ./) posteriormente ingrese DOOM.exe en la consola y el juego deberia estar comenzando.
+
+
+
 # Configurar Git (solo si es la primera vez)
 git config --global user.name "Tu Nombre"
 git config --global user.email "tuemail@example.com"
